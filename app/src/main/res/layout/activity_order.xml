@@ -57,8 +57,7 @@
         android:id="@+id/address_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:ems="10"
         android:hint="@string/enter_address_hint"
         android:inputType="textMultiLine"
@@ -85,6 +84,7 @@
         android:ems="10"
         android:hint="@string/enter_phone_hint"
         android:inputType="phone"
+        android:imeOptions="actionSend"
         app:layout_constraintBaseline_toBaselineOf="@+id/phone_label"
         app:layout_constraintStart_toEndOf="@+id/phone_label" />
 
@@ -159,13 +159,13 @@
         android:id="@+id/label_spinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/phone_text"
         app:layout_constraintTop_toBottomOf="@+id/address_text" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
